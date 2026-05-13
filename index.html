@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Estante Virtual</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2A1B14">
+</head>
+<body>
+    <div class="parallax-bg" id="parallaxBg"></div>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Estante Virtual</h1>
+        <div class="sub">Organize sua leitura.</div>
+        <h2>Meus livros</h2>
+        <div id="booksContainer" class="books-list"></div>
+
+        <div class="form-card">
+            <div class="input-group">
+                <label for="Title">Título *</label>
+                <input type="text" id="Title" placeholder="Título do livro" required>
+            </div>
+            <div class="input-group">
+                <label for="Author">Autor</label>
+                <input type="text" id="Author" placeholder="Autor do livro">
+            </div>
+            <div class="input-group">
+                <label for="Genre">Gênero</label>
+                <input type="text" id="Genre" placeholder="Gênero do livro">
+            </div>
+            <div class="input-group">
+                <label for="Pages">Páginas</label>
+                <input type="number" id="Pages" value="200" min="1" max="2000">
+            </div>
+            <div class="input-group">
+                <label for="Image">URL da imagem (capa)</label>
+                <input type="url" id="Image" placeholder="https://exemplo.com/capa.jpg">
+            </div>
+            <div class="input-group">
+                <button id="addBtn" class="botao-adicionar">Adicionar</button>
+            </div>
+            <div class="input-group" id="editGroup" style="display: none;">
+                <button id="updateBtn" class="btn-up">Atualizar</button>
+                <button id="cancelBtn" class="btn-cancel">Cancelar</button>
+            </div>
+            <div class="input-group" style="margin-top: 20px; border-top: 1px solid #444; padding-top: 10px;">
+                <button id="resetBtn" style="background: #666; font-size: 0.8em; margin-top: 10px;">Resetar Estante para Padrão</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Estante Virtual. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

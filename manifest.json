@@ -1,0 +1,21 @@
+{
+  "name": "Estante Virtual",
+  "short_name": "Estante",
+  "description": "Organize sua colecao de livros.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2A1B14",
+  "background_color": "#2A1B14",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192?text=Book",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512?text=Book",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
